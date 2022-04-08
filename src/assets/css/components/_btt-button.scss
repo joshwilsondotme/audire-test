@@ -1,0 +1,87 @@
+// Floating Back To Top Button
+//----------------------------------
+
+// Dependencies
+@mixin ab-position ($top, $right, $bottom, $left, $z-index) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+@mixin scaleY($ratio) {
+  -webkit-transform: scaleY($ratio);
+  -ms-transform: scaleY($ratio);
+  -o-transform: scaleY($ratio);
+  transform: scaleY($ratio);
+}
+
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+// Variables
+$base-bttn-button-size:      40px !default;
+$base-bttn-right-position:   40px !default;
+$base-bttn-bottom-position:  40px !default;
+$base-btn-icon-color:        #FFF !default;
+$base-bttn-bg-color:         var(--color-primary) !default;
+$base-bttn-bg-hover-color:   var(--color-primary-600) !default;
+$base-btn-icon-line-height:  38px !default;
+
+// Setup Back to Top Button
+.backtotop-btn {
+  width: $base-bttn-button-size;
+  height: 0;
+  position: fixed;
+  right: $base-bttn-right-position;
+  bottom: $base-bttn-bottom-position;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 9999;
+  opacity: 0;
+  @include transition(all,0.3s,ease);
+}
+
+.backtotop-btn.active {
+  height: $base-bttn-button-size;
+  opacity: 1;
+}
+
+.backtotop-btn .backtotop-inner {
+  background-color: $base-bttn-bg-color;
+  width: $base-bttn-button-size;
+  height: $base-bttn-button-size;
+  color: $base-btn-icon-color;
+  text-align: center;
+  vertical-align: middle;
+  line-height: $base-btn-icon-line-height;
+  transform: translateZ(0px);
+  position: relative;
+}
+
+.backtotop-btn .backtotop-inner::before {
+  background-color: $base-bttn-bg-hover-color;
+  content: "";
+  @include ab-position(0px,0px,0px,0px,-1);
+  @include scaleY(0);
+  @include transform-origin(50% 0 0);
+  @include transition(transform,0.2s,ease-out);
+}
+
+.backtotop-btn .backtotop-inner:hover::before {
+  @include scaleY(1);
+}

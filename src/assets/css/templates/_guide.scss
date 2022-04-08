@@ -1,0 +1,42 @@
+.guide {
+  &__top {
+    h1 {
+      font-size: var(--text-lg);
+      font-weight: 500;
+    }
+    h2 {
+      font-size: var(--text-md);
+      color: var(--color-guide-orange);
+    }
+  }
+
+  &__list {
+    margin: var(--space-xl) 0 0 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: center;
+  }
+
+  &__list-item {
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+    width: 50%;
+			&:before {
+				content: url('../../../images/guide/check-2.svg');
+				width: 29px;
+				height: 29px;
+				margin-left: calc(var(--space-xl) * -1);
+				float: left;
+      	position: relative;
+			}
+  }
+
+  &__middle {
+    margin-bottom: calc( var(--space-xxl) * -1 );
+  }
+}

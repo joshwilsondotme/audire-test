@@ -1,0 +1,67 @@
+// Footer Location Styles
+.site-header__left,
+.site-header__info,
+.site-footer__right-side,
+.site-footer__bottom,
+.site-menu--main {
+
+  .wpsl-locations-details {
+    margin: var(--space-md) 0;
+    
+    .wpsl-location-address,
+    .wpsl-contact-details {
+      padding-left: var(--space-lg);
+      position: relative;
+      &::before {
+        font-family: 'Font Awesome 5 Pro';
+        font-size: var(--text-md);
+        font-weight: 900;
+        color: var(--color-secondary);
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .wpsl-location-address {
+      &::before {
+        content: '\f3c5';
+      }
+    }
+    .wpsl-contact-details {
+      display: inline-flex;
+      align-items: center;
+      &:nth-of-type(1) {display: none;}
+      &::before {
+        content: '\f2a0';
+      }
+    }
+  }
+}
+
+.site-header__left {
+  .wpsl-locations-details{ 
+    margin: 0 var(--space-md) 0 0;
+    display: flex;
+
+    .wpsl-location-address,
+    .wpsl-contact-details {
+      font-size: var(--text-ms);
+      &::before {
+        color: inherit;
+        top: -2px;
+      }
+    }
+
+    .wpsl-location-address {
+      display: flex;
+      & > *:not(:first-of-type) {
+        margin-left: var(--space-sm);
+      }
+    }
+
+    .wpsl-contact-details {
+      margin-left: var(--space-md);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.row {
+  @extend .grid;
+  @extend .grid-gap-md;
+}
+
+@for $i from 1 through 12 {
+  .medium-#{$i}, .large-#{$i} {
+    @extend .col-#{$i};
+    
+    &:not(:first-child) {
+      margin-left: var(--grid-gap, 1em);
+    }
+  }
+}

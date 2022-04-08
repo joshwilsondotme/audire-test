@@ -1,0 +1,106 @@
+.resources {
+  &__toc {
+    .table-contents {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+  
+  &__section {
+    ul.flex-grid {
+      margin-top: var(--space-lg);
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      li {
+        flex: 0 0 25%;
+        margin-bottom: var(--space-lg);
+        
+        & > a {
+          width: 100%;
+          height: 100%;
+          
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          
+          &:hover {
+            h4 {
+              text-decoration: underline;
+              color: var(--color-primary-600);
+            }
+          }
+        }
+        
+        .img-outer-wrap {
+          flex: 0 0 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+          .img-inner-wrap {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        
+        h4 {
+          margin-top: var(--space-sm);
+          
+          &::after {
+            font-family: "Font Awesome 5 Pro";
+            content: "\f105";
+            font-weight: 900;
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+        
+        p {
+          margin-top: var(--space-lg);
+        }
+        
+        // Prevent orphaned children in the last line
+        &:first-child:nth-last-child(4n+1) ~ :nth-last-child(4) {
+          flex-basis: 25.1%;
+        }
+      }
+    } 
+  }
+
+  &__patient-links {}
+  
+  &__hearing-survey {
+    background-image: url(../../../images/bg-hearing-survey@2x.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  &__financing {
+    ul.flex-grid {
+      li {
+        flex-basis: 33.3%;
+        
+        & > a {
+          justify-content: flex-start;
+        }
+      }
+    
+      .hover-card {
+        border-radius: 4px;
+        padding: var(--space-xl);
+      
+        &:hover {
+          background: white;
+          box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
+        }
+      
+        h4 { margin-top: 0; }
+        p { color: var(--color-contrast-high); }
+      }
+    }
+  }
+}

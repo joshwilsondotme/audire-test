@@ -1,0 +1,239 @@
+{
+    "key": "group_6058fafc35603",
+    "title": "Location Options",
+    "fields": [
+        {
+            "key": "field_6166eff05a730",
+            "label": "Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6058fd16cdb32",
+            "label": "Intro Paragraph",
+            "name": "intro_paragraph",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h1>Find a Location Near You!<\/h1>\r\n<p>We offer our services in several locations to make high-quality hearing care more accessible and convenient. If you are ready to get started on the path to better hearing, give us a call to schedule an appointment today!<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6166c824836e7",
+            "label": "Location List Text",
+            "name": "location_list_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_62100a12cce79",
+            "label": "Design Options",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_62100a2dcce7a",
+            "label": "Title Design Options",
+            "name": "title_design_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62100a3acce7b",
+                    "label": "Background Color",
+                    "name": "color_options",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "primary-100": "Primary 100",
+                        "primary-200": "Primary 200",
+                        "primary-300": "Primary 300",
+                        "primary-400": "Primary 400",
+                        "primary-500": "Primary",
+                        "primary-600": "Primary 600",
+                        "primary-700": "Primary 700",
+                        "primary-800": "Primary 800",
+                        "primary-900": "Primary 900",
+                        "secondary-100": "Secondary 100",
+                        "secondary-200": "Secondary 200",
+                        "secondary-300": "Secondary 300",
+                        "secondary-400": "Secondary 400",
+                        "secondary-500": "Secondary",
+                        "secondary-600": "Secondary 600",
+                        "secondary-700": "Secondary 700",
+                        "secondary-800": "Secondary 800",
+                        "secondary-900": "Secondary 900",
+                        "tertiary-100": "Tertiary 100",
+                        "tertiary-200": "Tertiary 200",
+                        "tertiary-300": "Tertiary 300",
+                        "tertiary-400": "Tertiary 400",
+                        "tertiary-500": "Tertiary",
+                        "tertiary-600": "Tertiary 600",
+                        "tertiary-700": "Tertiary 700",
+                        "tertiary-800": "Tertiary 800",
+                        "tertiary-900": "Tertiary 900",
+                        "quaternary-100": "Quaternary 100",
+                        "quaternary-200": "Quaternary 200",
+                        "quaternary-300": "Quaternary 300",
+                        "quaternary-400": "Quaternary 400",
+                        "quaternary-500": "quaternary",
+                        "quaternary-600": "Quaternary 600",
+                        "quaternary-700": "Quaternary 700",
+                        "quaternary-800": "Quaternary 800",
+                        "quaternary-900": "Quaternary 900",
+                        "neutral-100": "Neutral 100",
+                        "neutral-200": "Neutral 200",
+                        "neutral-300": "Neutral 300",
+                        "neutral-400": "Neutral 400",
+                        "neutral-500": "Neutral",
+                        "neutral-600": "Neutral 600",
+                        "neutral-700": "Neutral 700",
+                        "neutral-800": "Neutral 800",
+                        "neutral-900": "Neutral 900",
+                        "contrast-100": "Contrast 100",
+                        "contrast-200": "Contrast 200",
+                        "contrast-300": "Contrast 300",
+                        "contrast-400": "Contrast 400",
+                        "contrast-500": "Contrast 500",
+                        "contrast-600": "Contrast 600"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "neutral-100",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_62100a59cce7c",
+                    "label": "Text Color",
+                    "name": "text_color",
+                    "type": "button_group",
+                    "instructions": "This will adjust the text color for the title text of interior pages.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "default": "Default",
+                        "white": "White"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        },
+        {
+            "key": "field_62100a85cce7d",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "locations-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1648041123
+}

@@ -1,0 +1,633 @@
+{
+    "key": "group_6058f4eceed47",
+    "title": "Staff Member",
+    "fields": [
+        {
+            "key": "field_6058f5090c09b",
+            "label": "Basic Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6058f5440c09c",
+            "label": "Job Title",
+            "name": "job_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6058f5510c09d",
+            "label": "Phone",
+            "name": "phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6058f55a0c09e",
+            "label": "Email",
+            "name": "email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60a7fd1957e1f",
+            "label": "LinkedIn",
+            "name": "linkedin",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_60abe5524b515",
+            "label": "Provider Location",
+            "name": "provider_location",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "wpsl_stores"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_6058f55f0c09f",
+            "label": "Biography",
+            "name": "biography",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6058f5730c0a0",
+                    "label": "Full",
+                    "name": "full",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6058f57f0c0a1",
+                    "label": "Exceprt",
+                    "name": "exceprt",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60abe23ac5390",
+            "label": "Quote",
+            "name": "quote",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60abe24dc5391",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60abe256c5392",
+                    "label": "Author",
+                    "name": "author",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6058f7ff96032",
+            "label": "Additional Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6058f81096033",
+            "label": "Education \/ Training",
+            "name": "education__training",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6058f84596035",
+            "label": "Licenses & Certifications",
+            "name": "licenses_&_certifications",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6058f86896037",
+            "label": "Specialty Areas",
+            "name": "specialty_areas",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6058f94097ae2",
+            "label": "Associations",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6058f94c97ae3",
+            "label": "Awards",
+            "name": "awards",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6058f95c97ae4",
+            "label": "Memberships & Associations",
+            "name": "memberships_associations",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "academy-of-doctors-of-audiology": "Academy of Doctors of Audiology",
+                "american-board-of-audiology": "American Board of Audiology",
+                "american-speech-language-hearing-association": "American Speech-Language Hearing Association",
+                "audigy-member": "Audigy Member",
+                "cochlear-alliance": "Cochlear Alliance",
+                "national-board-certified-hearing-instrument-specialist": "National Board Certified Hearing Instrument Specialist",
+                "american-academy-of-audiology": "American Academy of Audiology",
+                "the-american-institute-of-balance": "The American Institute of Balance",
+                "american-tinnitus-association": "American Tinnitus Association",
+                "better-business-bureau": "Better Business Bureau",
+                "hearing-loss-association-of-america": "Hearing Loss Association of America",
+                "healthy-hearing": "Healthy Hearing",
+                "international-hearing-society": "International Hearing Society",
+                "speech-language-and-audiology-canada": "Speech Language and Audiology Canada",
+                "canadian-academy-of-audiology": "Canadian Academy of Audiology",
+                "better-business-bureau-canada": "Better Business Bureau Canada"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        },
+        {
+            "key": "field_60ad3df3e2050",
+            "label": "Contact",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60ad3e0c52957",
+            "label": "Contact Form Options",
+            "name": "contact_form_options",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "general": "General",
+                "blueprint": "Blueprint",
+                "sycle": "Sycle"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "array"
+        },
+        {
+            "key": "field_60ad411613dad",
+            "label": "Contact Introduction",
+            "name": "contact_introduction",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60ad3e0c52957",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h2>Schedule an Appointment Today!<\/h2>\r\n<p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_60ad3e50d2827",
+            "label": "General Contact Form",
+            "name": "general_contact_form",
+            "type": "text",
+            "instructions": "Add shortcode for the general contact form",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60ad3e0c52957",
+                        "operator": "==",
+                        "value": "general"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60ad3e9917100",
+            "label": "BluePrint Solutions",
+            "name": "blueprint_solutions",
+            "type": "textarea",
+            "instructions": "Add iframe embed for BluePrint Solutions scheduler.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60ad3e0c52957",
+                        "operator": "==",
+                        "value": "blueprint"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_60ad3ef0c7bfa",
+            "label": "Sycle",
+            "name": "sycle",
+            "type": "text",
+            "instructions": "Add site ID for Sycle scheduler.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60ad3e0c52957",
+                        "operator": "==",
+                        "value": "sycle"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_615c75388b913",
+            "label": "Contact Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_615c750295b44",
+            "label": "Background Color",
+            "name": "color_options",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "primary-100": "Primary 100",
+                "primary-200": "Primary 200",
+                "primary-300": "Primary 300",
+                "primary-400": "Primary 400",
+                "primary-500": "Primary",
+                "primary-600": "Primary 600",
+                "primary-700": "Primary 700",
+                "primary-800": "Primary 800",
+                "primary-900": "Primary 900",
+                "secondary-100": "Secondary 100",
+                "secondary-200": "Secondary 200",
+                "secondary-300": "Secondary 300",
+                "secondary-400": "Secondary 400",
+                "secondary-500": "Secondary",
+                "secondary-600": "Secondary 600",
+                "secondary-700": "Secondary 700",
+                "secondary-800": "Secondary 800",
+                "secondary-900": "Secondary 900",
+                "tertiary-100": "Tertiary 100",
+                "tertiary-200": "Tertiary 200",
+                "tertiary-300": "Tertiary 300",
+                "tertiary-400": "Tertiary 400",
+                "tertiary-500": "Tertiary",
+                "tertiary-600": "Tertiary 600",
+                "tertiary-700": "Tertiary 700",
+                "tertiary-800": "Tertiary 800",
+                "tertiary-900": "Tertiary 900",
+                "quaternary-100": "Quaternary 100",
+                "quaternary-200": "Quaternary 200",
+                "quaternary-300": "Quaternary 300",
+                "quaternary-400": "Quaternary 400",
+                "quaternary-500": "quaternary",
+                "quaternary-600": "Quaternary 600",
+                "quaternary-700": "Quaternary 700",
+                "quaternary-800": "Quaternary 800",
+                "quaternary-900": "Quaternary 900",
+                "neutral-100": "Neutral 100",
+                "neutral-200": "Neutral 200",
+                "neutral-300": "Neutral 300",
+                "neutral-400": "Neutral 400",
+                "neutral-500": "Neutral",
+                "neutral-600": "Neutral 600",
+                "neutral-700": "Neutral 700",
+                "neutral-800": "Neutral 800",
+                "neutral-900": "Neutral 900",
+                "contrast-100": "Contrast 100",
+                "contrast-200": "Contrast 200",
+                "contrast-300": "Contrast 300",
+                "contrast-400": "Contrast 400",
+                "contrast-500": "Contrast 500",
+                "contrast-600": "Contrast 600"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "primary-100",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "staff_member"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642445687
+}

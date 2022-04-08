@@ -1,0 +1,212 @@
+.card {
+  $self: &;
+  color: inherit;
+
+  .btn {
+    width: max-content;
+  }
+
+  // Basic CTA Styles
+  &__basic {
+    box-shadow: var(--shadow-sm);
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--shadow-md);
+    }
+
+    &--transparent {
+      box-shadow: none;
+
+      #{$self}__image {
+        box-shadow: var(--shadow-sm);
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+
+        #{$self}__image {
+          box-shadow: var(--shadow-md);
+        }
+      }
+    }
+  }
+
+  // Icon CTA Styles
+  &__icon {
+
+    #{$self}__image-container {
+      display: grid;
+      grid-template-columns: 1 / 1;
+      grid-template-rows: 1 / 1;
+      justify-items: center;
+    }
+
+    #{$self}__image {
+      width: var(--space-xxxl);
+      height: var(--space-xxxl);
+      border-radius: 100vh;
+      box-shadow: var(--shadow-sm);
+      grid-area: 1 / 1;
+      transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+      &--start {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      &--hover {
+        opacity: 0;
+        z-index: 1;
+      }
+    }
+
+    // Left Aligned
+    &--left {
+      @include breakpoint('md') {
+        #{$self}__inner {
+          // padding: var(--space-md);
+          display: flex;
+          flex-flow: row;
+        }
+      }
+
+      #{$self}__image-container {
+        margin-right: var(--space-md);
+      }
+    }
+
+    &:hover,
+    &:focus {
+
+      #{$self}__image {
+        box-shadow: var(--shadow-md);
+
+        &--start {
+          opacity: 0;
+          z-index: 1;
+        }
+        &--hover {
+          opacity: 1;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  // Inline CTA Styles
+  &__inline {
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-timing-function) var(--transition-duration-fast);
+      * {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__hover {
+    position: relative;
+    box-shadow: var(--shadow-sm);
+
+    #{$self}__details {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom-left-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+
+    #{$self}__details-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    #{$self}__overlay {
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .5));
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+    }
+
+    #{$self}__hover-overlay {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom-left-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+
+    &:hover,
+    &:focus {
+      #{$self}__hover-overlay { 
+        opacity: .7;
+        transition: all var(--transition-timing-function) var(--transition-duration-fast);
+      }
+    }
+  }
+
+  // Global Hover Styles
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    .btn--primary {
+      background-color: var(--color-primary-600);
+      @extend .shadow-md;
+    }
+
+    .btn--secondary {
+      background-color: var(--color-secondary-600);
+      @extend .shadow-md;
+    }
+
+    .btn--tertiary {
+      background-color: var(--color-tertiary-600);
+      @extend .shadow-md;
+    }
+
+    .btn--quaternary {
+      background-color: var(--color-quaternary-600);
+      @extend .shadow-md;
+    }
+
+    .btn--primary--bordered {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+
+    .btn--secondary--bordered {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+
+    .btn--tertiary--bordered {
+      background-color: var(--color-tertiary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+
+    .btn--quaternary--bordered {
+      background-color: var(--color-quaternary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+  }
+}

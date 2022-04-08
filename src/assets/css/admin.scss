@@ -1,0 +1,157 @@
+@import 'base/mixins';
+@import 'base/colors';
+// @import 'base/breakpoints';
+// @import 'base/spacing';
+// @import 'base/typography';
+// @import 'base/lists';
+// @import 'base/icons';
+// @import 'base/media';
+// @import 'base/buttons';
+// @import 'base/util';
+// @import 'base/transitions';
+
+$colors:  ( primary-100, var(--color-primary-100) ),
+          ( primary-200, var(--color-primary-200) ),
+          ( primary-300, var(--color-primary-300) ),
+          ( primary-400, var(--color-primary-400) ),
+          ( primary-500, var(--color-primary-500) ),
+          ( primary-600, var(--color-primary-600) ),
+          ( primary-700, var(--color-primary-700) ),
+          ( primary-800, var(--color-primary-800) ),
+          ( primary-900, var(--color-primary-900) ),
+          ( secondary-100, var(--color-secondary-100) ),
+          ( secondary-200, var(--color-secondary-200) ),
+          ( secondary-300, var(--color-secondary-300) ),
+          ( secondary-400, var(--color-secondary-400) ),
+          ( secondary-500, var(--color-secondary-500) ),
+          ( secondary-600, var(--color-secondary-600) ),
+          ( secondary-700, var(--color-secondary-700) ),
+          ( secondary-800, var(--color-secondary-800) ),
+          ( secondary-900, var(--color-secondary-900) ),
+          ( tertiary-100, var(--color-tertiary-100) ),
+          ( tertiary-200, var(--color-tertiary-200) ),
+          ( tertiary-300, var(--color-tertiary-300) ),
+          ( tertiary-400, var(--color-tertiary-400) ),
+          ( tertiary-500, var(--color-tertiary-500) ),
+          ( tertiary-600, var(--color-tertiary-600) ),
+          ( tertiary-700, var(--color-tertiary-700) ),
+          ( tertiary-800, var(--color-tertiary-800) ),
+          ( tertiary-900, var(--color-tertiary-900) ),
+          ( quaternary-100, var(--color-quaternary-100) ),
+          ( quaternary-200, var(--color-quaternary-200) ),
+          ( quaternary-300, var(--color-quaternary-300) ),
+          ( quaternary-400, var(--color-quaternary-400) ),
+          ( quaternary-500, var(--color-quaternary-500) ),
+          ( quaternary-600, var(--color-quaternary-600) ),
+          ( quaternary-700, var(--color-quaternary-700) ),
+          ( quaternary-800, var(--color-quaternary-800) ),
+          ( quaternary-900, var(--color-quaternary-900) ),
+          ( neutral-100, var(--color-neutral-100) ),
+          ( neutral-200, var(--color-neutral-200) ),
+          ( neutral-300, var(--color-neutral-300) ),
+          ( neutral-400, var(--color-neutral-400) ),
+          ( neutral-500, var(--color-neutral-500) ),
+          ( neutral-600, var(--color-neutral-600) ),
+          ( neutral-700, var(--color-neutral-700) ),
+          ( neutral-800, var(--color-neutral-800) ),
+          ( neutral-900, var(--color-neutral-900) ),
+          ( contrast-100, var(--color-bg) ),
+          ( contrast-200, var(--color-contrast-lower) ),
+          ( contrast-300, var(--color-contrast-low) ),
+          ( contrast-400, var(--color-contrast-medium) ),
+          ( contrast-500, var(--color-contrast-high) ),
+          ( contrast-600, var(--color-contrast-higher) ),;
+
+.wp-admin .acf-field[data-name^="color_options"] {
+
+  ul.acf-radio-list {
+    //  display: flex;
+    //  flex-wrap: wrap;
+    display: grid;
+    gap: .5em;
+    grid-template-columns: repeat(9, 28px);
+    grid-auto-rows: 28px;
+    padding-left: 0;
+    margin-left: 0;
+    &::before { display: none; }
+    
+    li {
+      margin-right: 0;
+      display: flex;
+
+      label {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: var(--color-white);
+        font-size: 0;
+
+        input[type="radio"] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 28px;
+          height: 28px;
+
+          &:checked {
+            &::before {
+              content: "\f15e";
+              font-family: dashicons;
+              width: 20px;
+              height: 20px;
+              background-color: transparent;
+              font-size: 20px;
+              margin: 1px;
+              color: var(--color-white);
+            }
+          }
+
+          // override light colors with a black checkmark when checked (default is white)
+          &[value="white"],
+          &[value="grey-light"],
+          &[value="grey-medium"] {
+
+            &:checked {
+              &::before { 
+                  color: var(--color-black);
+              }
+            }
+          }
+
+          @each $name, $color in $colors {
+            &[value="#{$name}"] {
+              background-color: $color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.postbox-container-1 .acf-postbox {
+  ul.acf-radio-list {
+    gap: .25em !important;
+    grid-template-columns: repeat(9, 23px) !important;
+    grid-auto-rows: 23px !important;
+    li {
+      label {
+        width: 20px !important;
+        height: 20px !important;
+        margin: 0 !important;
+        input[type="radio"] {
+          width: 20px !important;
+          height: 20px !important;
+          &:checked {
+
+            &::before {
+              margin: -1px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

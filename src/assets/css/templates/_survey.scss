@@ -1,0 +1,37 @@
+.hidden-widgets > div {
+  &:not(.survey-test):not(.survey-message) {
+    display: none;
+  }
+}
+
+.survey-test-inner {
+  background: var(--color-neutral-100);
+}
+
+.questions {
+  padding: 40px 0;
+  font-family: var(--font-headline);
+  font-size: var(--text-md);
+  .question {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.score-wrapper {
+  background-color: var(--color-success-dark);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  text-align: center;
+  border: 1px solid var(--color-success-darker);
+}
+
+.btn-survey, .results button, .answer, .results button, button.btn-contact {
+  @extend .btn;
+  cursor: pointer;
+}
+
+.progress-wrapper>ul>li.active {
+  color: var(--color-black) !important;
+}

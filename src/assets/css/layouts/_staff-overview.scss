@@ -1,0 +1,41 @@
+.staff {
+  $self: &;
+  &__more-link {
+    color: var(--color-primary);
+    float: right;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    margin-top: var(--space-md);
+  }
+  
+  &__bio-full--accordion {
+    
+  }
+
+  &__bio-full--accordion + button {
+    &::before {
+      content: '\f067';
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 400;
+      color: var(--color-primary);
+    }
+  }
+  &__bio-full--accordion.expanded + button {
+    &::before {
+      content: '\f068';
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 400;
+      color: var(--color-primary);
+    }
+  }
+
+  &__social-link {
+    &:hover {
+      i.fab {
+        text-decoration: underline;
+      }
+    }
+    
+  }
+}

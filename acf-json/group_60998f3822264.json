@@ -1,0 +1,1016 @@
+{
+    "key": "group_60998f3822264",
+    "title": "Product Overview Sections",
+    "fields": [
+        {
+            "key": "field_60998faeebd7c",
+            "label": "Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60998fb9ebd7d",
+            "label": "Product Page Introduction",
+            "name": "product_introduction",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60999009ebd7f",
+                    "label": "Introduction",
+                    "name": "introduction",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<h2>Hearing Products<\/h2>\r\n<p>If a hearing aid or device is necessary for your hearing journey, our experts will guide you to the best solution. We offer the latest hearing technology and products that address a wide variety of hearing loss concerns, helping you reconnect to the world around you.<\/p>",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_619266f9be4db",
+            "label": "Design Options",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_621fd77e16485",
+            "label": "Custom Title Banner",
+            "name": "custom_title_banner_products",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_621fde35d18c4",
+            "label": "Custom Interior Banner",
+            "name": "products_interior_banner",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_621fd77e16485",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_61a63d3916889"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_6192675cbe4e0",
+            "label": "Quick Links",
+            "name": "quick_links",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61926775be4e1",
+                    "label": "Background Color",
+                    "name": "color_options",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "primary-100": "Primary 100",
+                        "primary-200": "Primary 200",
+                        "primary-300": "Primary 300",
+                        "primary-400": "Primary 400",
+                        "primary-500": "Primary",
+                        "primary-600": "Primary 600",
+                        "primary-700": "Primary 700",
+                        "primary-800": "Primary 800",
+                        "primary-900": "Primary 900",
+                        "secondary-100": "Secondary 100",
+                        "secondary-200": "Secondary 200",
+                        "secondary-300": "Secondary 300",
+                        "secondary-400": "Secondary 400",
+                        "secondary-500": "Secondary",
+                        "secondary-600": "Secondary 600",
+                        "secondary-700": "Secondary 700",
+                        "secondary-800": "Secondary 800",
+                        "secondary-900": "Secondary 900",
+                        "tertiary-100": "Tertiary 100",
+                        "tertiary-200": "Tertiary 200",
+                        "tertiary-300": "Tertiary 300",
+                        "tertiary-400": "Tertiary 400",
+                        "tertiary-500": "Tertiary",
+                        "tertiary-600": "Tertiary 600",
+                        "tertiary-700": "Tertiary 700",
+                        "tertiary-800": "Tertiary 800",
+                        "tertiary-900": "Tertiary 900",
+                        "quaternary-100": "Quaternary 100",
+                        "quaternary-200": "Quaternary 200",
+                        "quaternary-300": "Quaternary 300",
+                        "quaternary-400": "Quaternary 400",
+                        "quaternary-500": "quaternary",
+                        "quaternary-600": "Quaternary 600",
+                        "quaternary-700": "Quaternary 700",
+                        "quaternary-800": "Quaternary 800",
+                        "quaternary-900": "Quaternary 900",
+                        "neutral-100": "Neutral 100",
+                        "neutral-200": "Neutral 200",
+                        "neutral-300": "Neutral 300",
+                        "neutral-400": "Neutral 400",
+                        "neutral-500": "Neutral",
+                        "neutral-600": "Neutral 600",
+                        "neutral-700": "Neutral 700",
+                        "neutral-800": "Neutral 800",
+                        "neutral-900": "Neutral 900",
+                        "contrast-100": "Contrast 100",
+                        "contrast-200": "Contrast 200",
+                        "contrast-300": "Contrast 300",
+                        "contrast-400": "Contrast 400",
+                        "contrast-500": "Contrast 500",
+                        "contrast-600": "Contrast 600"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "quaternary-100",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_619267a7be4e2",
+                    "label": "Text Color",
+                    "name": "text_color",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "default": "Default",
+                        "white": "White"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        },
+        {
+            "key": "field_6192670bbe4dc",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_60999020ebd80",
+            "label": "Layout Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6099902bebd81",
+            "label": "",
+            "name": "layout_options",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_60999205c24e3": {
+                    "key": "layout_60999205c24e3",
+                    "name": "hearing_technology",
+                    "label": "Hearing Technology",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60999235ebd85",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p class=\"color-secondary-500 text-uppercase letter-spacing-1 text-weight-500\">Hearing Technology<\/p>\r\n<h2>Modern Solutions For All Types of Hearing Loss<\/h2>\r\n<p>Thanks to advances in technology, hearing products are designed to be more compatible with our lives than ever before. In addition to hearing aids, there are a number of products that make living and communicating with hearing loss easier to manage, so you never miss a beat.<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_60999273ebd86",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_609ac4ae864ab",
+                            "label": "Design Options",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_61f059edbab4c",
+                            "label": "Accordion Style",
+                            "name": "accordion_style",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "one": "One Column",
+                                "two": "Two Column"
+                            },
+                            "allow_null": 0,
+                            "default_value": "one",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_609ac4bc864ac",
+                            "label": "Background Options",
+                            "name": "hearing_technology_background",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_609ac4ca864ad",
+                                    "label": "Background Color",
+                                    "name": "color_options",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "contrast-100",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60999291ebd87": {
+                    "key": "layout_60999291ebd87",
+                    "name": "guide_to_hearing_aids",
+                    "label": "Guide to Hearing Aids",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60999297ebd88",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p class=\"color-secondary-500 text-uppercase letter-spacing-1 text-weight-500\">Hearing Product Guide<\/p>\r\n<h2>Curious About Hearing Technology, but Not Sure Where to Start?<\/h2>\r\n<p>With so many styles and options, it can be difficult to know which products will suit your needs. Our Consumer Guide to Hearing Aids provides an in-depth breakdown of the different types of hearing devices, as well as the technology available for all types of hearing loss.<\/p>\r\n<a href=\"\/resources\/consumers-guide-to-hearing-aids\/\" class=\"btn btn--primary\">Guide to Hearing Aids<\/a>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_609997630ba09": {
+                    "key": "layout_609997630ba09",
+                    "name": "manufacturers",
+                    "label": "Manufacturers",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609997700ba0a",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p class=\"color-secondary-500 text-uppercase letter-spacing-1 text-weight-500\">Hearing Aid Manufacturers<\/p>\r\n<h2>Hearing Products Created by the Best in the Industry<\/h2>\r\n<p>When it comes to hearing loss, you need a device you can rely on to perform its best. That’s why we carry products from manufacturers with a proven track record of exceptional quality. No matter your budget, lifestyle or type of hearing loss, we have a product to meet your needs.<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_60a6abc44b39e",
+                            "label": "Design Options",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_60a6abd34b39f",
+                            "label": "Background Options",
+                            "name": "manufacturers_background",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_60ddcfc322354",
+                                    "label": "Background Color",
+                                    "name": "color_options",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "neutral-100",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6179467ca0030",
+                            "label": "Boxed Logos",
+                            "name": "boxed_logos",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_609997b10ba0c": {
+                    "key": "layout_609997b10ba0c",
+                    "name": "hearing_protection",
+                    "label": "Hearing Protection",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609997bc0ba0d",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p class=\"color-secondary-500 text-uppercase letter-spacing-1 text-weight-500\">Hearing Protection<\/p>\r\n<h2>Make Protection a Priority<\/h2>\r\n<p>Protecting your ears from noise damage is essential to healthy hearing. We carry a wide variety of options equipped with the latest features and customizations, so you can find the best fit for your lifestyle.<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6099983b0ba0e",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_60a6b2b14b3a1",
+                            "label": "Design Options",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_61f05a16bab4d",
+                            "label": "Accordion Style",
+                            "name": "accordion_style",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "one": "One Column",
+                                "two": "Two Column"
+                            },
+                            "allow_null": 0,
+                            "default_value": "one",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_60a6b2bb4b3a2",
+                            "label": "Background Options",
+                            "name": "hearing_protection_background",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_60ddd00b22355",
+                                    "label": "Background Color",
+                                    "name": "color_options",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "contrast-100",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_609998600ba10": {
+                    "key": "layout_609998600ba10",
+                    "name": "assistive_listening_devices",
+                    "label": "Assistive Listening Devices",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6099986d0ba11",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p class=\"color-secondary-500 text-uppercase letter-spacing-1 text-weight-500\">Assistive Listening Technology<\/p>\r\n<h2>Additional Tools to Support Clear Communication<\/h2>\r\n<p>You don’t have to rely on hearing aids alone; assistive listening technology and compatible devices can help bring more clarity to conversations and are another great way to foster healthy communication and connections.<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_60a6b3044b3a3",
+                            "label": "Design Option",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_60a6b3124b3a4",
+                            "label": "Background Options",
+                            "name": "ald_background",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_60ddd31e22356",
+                                    "label": "Background Color",
+                                    "name": "color_options",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "primary-100",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_617946d1a0031",
+                            "label": "Boxed Logos",
+                            "name": "boxed_logos",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Content",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "product-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1646255749
+}

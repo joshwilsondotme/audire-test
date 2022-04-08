@@ -1,0 +1,271 @@
+ul.list-reset,
+ol.list-reset {
+  list-style-type: none;
+}
+
+//a list with an icon as the bullet
+ul.icon-list,
+ol.icon-list {
+  $self: &;
+  list-style: none;
+  padding-left: 0 !important;
+  position: relative;
+  
+  li {
+    position: relative;
+    padding-left: var(--space-lg);
+  }
+  li::before {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+  li > svg,
+  &--soundwave li::before {
+    position: absolute;
+    top: calc(var(--space-xs) - 1);
+    left: 0;
+  }
+  &--soundwave li {
+    display: flex;
+    align-items: center;
+    padding-left: calc(var(--space-xl) * 1.25);
+  }
+
+
+  //bullet style modifiers
+  // TODO: Double Check, Single Check, Outline & Solid options, Soundwave
+  &--check {
+    li::before {content: '\f560';}
+  }
+  &--long-arrow {
+    li::before {content: '\f178';}
+  }
+  &--circle-check {
+    li::before {content: '\f058';}
+  }
+  &--soundwave {
+    li::before {
+      content:'';
+      mask: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="31.549" height="31.074" viewBox="0 0 31.549 31.074"><path class="a" d="M662.955,112.256h-6.761a1.12,1.12,0,0,0-1.093.823l-1.878,7.251-2.67-22.339a1.134,1.134,0,0,0-2.223-.092l-3.571,17.239-2.125-7.519a1.132,1.132,0,0,0-1.382-.765,1.115,1.115,0,0,0-.752.647l-1.97,4.755h-4.849a1.132,1.132,0,0,0-1.129.882,1.1,1.1,0,0,0,1.107,1.293h5.534a1.14,1.14,0,0,0,1.059-.717l1.015-2.54,2.526,9.262a1.127,1.127,0,0,0,1.087.83h.049a1.139,1.139,0,0,0,1.078-.911l3.138-15.7,2.59,22.434a1.139,1.139,0,0,0,1.057,1.007l.074,0a1.139,1.139,0,0,0,1.1-.864l3.2-12.809h5.748a1.14,1.14,0,0,0,1.142-.893A1.1,1.1,0,0,0,662.955,112.256Z" transform="translate(-632.533 -97.03)"/></svg>') no-repeat 50% 50%;
+      mask-size: cover;
+      display: inline-block;
+      width: var(--space-xl);
+      height: var(--space-xl);
+      background-color: var(--color-contrast-higher);
+    }
+
+
+    &.icon-list--color-primary{
+      li::before {
+        background-color: var(--color-primary);
+      }
+    }
+
+    &.icon-list--color-secondary{
+      li::before {
+        background-color: var(--color-secondary);
+      }
+    }
+
+    &.icon-list--color-tertiary{
+      li::before {
+        background-color: var(--color-tertiary);
+      }
+    }
+    
+    &.icon-list--color-quaternary{
+      li::before {
+        background-color: var(--color-quaternary);
+      }
+    }
+    
+  }
+
+  //bullet color modifiers
+  &--color-primary {
+    li svg,
+    li::before {
+      color: var(--color-primary);
+    }
+  }
+
+  &--color-secondary {
+    li svg,
+    li::before {
+      color: var(--color-secondary);
+    }
+  }
+
+  &--color-tertiary {
+    li svg,
+    li::before {
+      color: var(--color-tertiary);
+    }
+  }
+
+  &--color-quaternary {
+    li svg,
+    li::before {
+      color: var(--color-quaternary);
+    }
+  }
+
+
+  &--color-white {
+    li,
+    li svg,
+    li::before {
+      color: var(--color-white);
+    }
+  }
+  
+}
+
+
+//a list that is ALWAYS two columns
+//better suited for shorter length list items
+//uses columns so rows will not align
+ul.two-column-list {
+  column-count: 2;
+  column-gap: var(--space-xs);
+  li {
+    break-inside: avoid;
+  }
+}
+
+//a list that is two columns on larger screens
+//better suited for longer length list items
+//uses flex so rows do align
+ul.two-column-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    margin-bottom: var(--space-md);
+    flex-basis: 100%;
+    line-height: var(--body-line-height);
+    
+    @include breakpoint(sm) {
+
+      flex-basis: calc(50% - var(--space-lg));
+      max-width: calc(50% - var(--space-lg));
+      
+      //at sm breakpoint, when inside a col-6@sm class, keep it at 100%
+      .col-6\@sm & {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+    }
+
+    @include breakpoint(md) {
+      //now make it 2 columns
+      .col-6\@sm & {
+        flex-basis: calc(50% - var(--space-lg));
+        max-width: calc(50% - var(--space-lg));
+      }
+    }
+  }
+}
+
+ul.three-column-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    margin-bottom: var(--space-lg);
+    flex-basis: 100%;
+    
+    @include breakpoint(sm) {
+
+      flex-basis: calc(33.33% - var(--space-lg));
+      max-width: calc(33.33% - var(--space-lg));
+      
+      //at sm breakpoint, when inside a col-6@sm class, keep it at 100%
+      // .col-6\@sm & {
+      //   flex-basis: 100%;
+      //   max-width: 100%;
+      // }
+
+    }
+
+    @include breakpoint(md) {
+      //now make it 2 columns
+      .col-4\@sm & {
+        flex-basis: calc(50% - var(--space-lg));
+        max-width: calc(50% - var(--space-lg));
+      }
+    }
+  }
+}
+
+//Inline lists
+ul.list-inline {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-flow: wrap;
+  padding-left: 0;
+
+  li {
+    // flex-grow: 1;
+    // flex-basis: 0;
+    img { width: 100%; }
+  }
+
+  &--space-sm {
+    li:not(:first-child) {
+      margin-left: var(--space-sm);
+      @include breakpoint-max('sm') {
+        margin-left: 0;
+      }
+      
+    }
+    
+  }
+
+  &--space-md {
+    li:not(:first-child) {
+      margin-left: var(--space-md);
+      @include breakpoint-max('sm') {
+        margin-left: 0;
+      }
+      
+    }
+    
+  }
+
+  &--space-lg {
+    li:not(:first-child) {
+      margin-left: var(--space-lg);
+      @include breakpoint-max('sm') {
+        margin-left: 0;
+      }
+    }
+    
+  }
+  
+  &__logo-list {
+    & > * { flex: 1; }
+  }
+}
+
+//styles for a "headline" within longer list items
+.list-item-headline {
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  color: var(--color-black);
+
+  [data-text-theme="light"] & {
+    color: var(--color-gray-lighter);
+  }
+}

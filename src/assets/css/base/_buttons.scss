@@ -1,0 +1,407 @@
+:root{
+  --btn-font-size: 1em;
+  --btn-font-size-sm: 0.8em;
+  --btn-font-size-md: 1.2em;
+  --btn-font-size-lg: 1.4em;
+  --btn-padding-x: var(--space-lg);
+  --btn-padding-y: var(--space-md);
+  --btn-radius: 4px;
+}
+
+// basic button style
+.btn {
+  cursor: pointer;
+
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  
+  padding-top: var(--btn-padding-y);
+  padding-bottom: var(--btn-padding-y);
+  padding-left: var(--btn-padding-x);
+  padding-right: var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+
+  font-family: var(--font-title);
+  font-size: var(--btn-font-size);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+
+  @include fontSmooth;
+  
+  .icon {
+    @extend .margin-left-sm;
+  }
+}
+
+//themes
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  @extend .shadow-sm;
+  transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-600);
+    @extend .shadow-md;
+    
+  }
+
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+  }
+  
+  &--white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary-600);
+      border-color: var(--color-primary-600);
+      @extend .shadow-md;
+    }
+  }
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-secondary-600);
+    @extend .shadow-md;
+    
+  }
+
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+  }
+  
+  &--white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-primary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--color-secondary-600);
+      border-color: var(--color-secondary-600);
+      @extend .shadow-md;
+    }
+  }
+}
+
+.btn--tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-tertiary-600);
+    @extend .shadow-md;
+    
+  }
+
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-tertiary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+  }
+  
+  &--white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--color-tertiary-600);
+      border-color: var(--color-tertiary-600);
+      @extend .shadow-md;
+    }
+  }
+}
+
+.btn--quaternary {
+  background-color: var(--color-quaternary);
+  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-quaternary-600);
+    @extend .shadow-md;
+    
+  }
+
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid var(--color-quaternary);
+    color: var(--color-quaternary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-quaternary);
+      color: var(--color-white);
+      @extend .shadow-md;
+    }
+  }
+  
+  &--white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-quaternary);
+    color: var(--color-quaternary);
+    @extend .shadow-sm;
+    transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--color-quaternary-600);
+      border-color: var(--color-quaternary-600);
+      @extend .shadow-md;
+    }
+  }
+}
+
+.btn--guide {
+  background-color: var(--color-guide-orange);
+  color: var(--color-white);
+  @extend .shadow-sm;
+  transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-guide-orange);
+    @extend .shadow-md;
+    
+  }
+}
+
+a.answer {
+  background-color: var(--color-success);
+  @extend .shadow-sm;
+  font-weight: normal;
+  transition: all var(--transition-timing-function) var(--transition-duration-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-success-dark);
+    @extend .shadow-md;
+    
+  }
+}
+
+.btn--subtle {
+  color: var(--color-secondary-500);
+  border: 2px solid var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-white);
+    color: var(--color-);
+  }
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--white {
+  background: var(--color-white);
+  color: var(--color-primary-500) !important;
+  &:hover,
+  &:focus {
+    background: var(--color-contrast-200);
+  }
+}
+
+.btn--gray {
+  background: var(--color-contrast-medium);
+  color: var(--color-white);
+}
+
+.btn--link {
+  color: var(--color-primary);
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--color-primary-600);
+  }
+
+  &--secondary {
+    color: var(--color-secondary);
+    
+    &:hover { color: var(--color-secondary-600); }
+  }
+
+  &--tertiary {
+    color: var(--color-tertiary);
+    
+    &:hover { color: var(--color-tertiary-600); }
+  }
+
+  &--default {
+    color: var(--color-contrast-high);
+  }
+  
+  &--white {
+    color: var(--color-white);
+    
+    &:hover { color: var(--color-contrast-300); }
+  }
+
+  &--guide {
+    color: var(--color-guide-orange);
+  }
+}
+
+
+.btn--slider-arrows {
+  background-image: none;
+  border-radius: 0;
+  font-size: var(--text-lg);
+  padding: var(--space-sm);
+
+  &.btn--lg {
+    padding: var(--space-md);
+    font-size: var(--text-lg);
+  }
+}
+
+// feedback
+.btn--disabled,
+a[disabled],
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+// size
+.btn--sm {
+  font-size: var(--btn-font-size-sm);
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.btn--md {
+  font-size: var(--btn-font-size-md);
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.btn--lg {
+  font-size: var(--btn-font-size-lg);
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+}
+
+// Fancy Hover Effect
+[class*="link--hover"] {
+  display: inline-block;
+  text-decoration: none !important;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-primary);
+    transform: translateX(-100%);
+  }
+  &:hover::before,
+  &:focus::before {
+    transform: translateX(0);
+    text-decoration: none !important;
+    transition: all var(--transition-timing-function) var(--transition-duration);
+  }
+}
+
+//icon
+[class*="btn--icon"] {
+
+  &::after {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    line-height: 1;
+    margin-left: var(--space-xs);
+    transition: margin-left var(--transition-timing-function) var(--transition-duration-fast);
+    display: inline-block;
+  }
+
+  &:hover, &:active {
+    &::after {
+      margin-left: var(--space-sm);
+      text-decoration: none;
+    }
+  }
+}
+
+
+.btn--icon-arrow {
+  &::after {content: '\f178';}
+}
+
+.btn--icon-external {
+  &::after {content: '\f08e';}
+}
+
+// Phone, Schedule
+.link__block {
+  display: block;
+  color: inherit;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+  }
+}

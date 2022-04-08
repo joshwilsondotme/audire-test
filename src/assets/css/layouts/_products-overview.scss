@@ -1,0 +1,63 @@
+.brands {
+  $self : &;
+  &__item { 
+    margin-bottom: 0; 
+    &--boxed {
+      #{$self}__logo {
+        display: block;
+        background: var(--color-white);
+        box-shadow: var(--shadow-sm);
+        &:hover,
+        &:focus {
+          box-shadow: var(--shadow-md);
+        }
+      }
+      
+    }
+  }
+}
+
+.products {
+
+  &__guide {
+    background-image: url(../../../images/bg-hearing-guide@2x.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__assitive {
+    ul.brands__list {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      img {
+        max-height: var(--space-xxxl);
+      }
+    }
+  }
+}
+
+
+.hover-card {
+  &__list {
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__item {
+    align-items: center;
+    flex: none;
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    img {
+      height: 200px;
+      width: auto;
+    }
+  }
+}

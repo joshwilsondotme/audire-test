@@ -1,0 +1,13 @@
+.wpcf7 {
+  input, select, textarea {
+    border: 1px solid var(--color-contrast-300);
+  }
+  
+  .wpcf7-checkbox {
+	flex-wrap: wrap;
+  }
+
+  .wpcf7-checkbox > * {
+	flex: 0 0 48%;
+  }
+}

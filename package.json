@@ -1,0 +1,31 @@
+{
+  "name": "AudiologyDesign",
+  "version": "2.1.2",
+  "author": "Adept Marketing",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie 10"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
+    "postcss-calc": "^7.0.1",
+    "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables"
+  }
+}

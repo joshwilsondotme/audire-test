@@ -1,0 +1,57 @@
+.logo-list {
+  $self: &;
+
+  & > * {
+    // flex: 1;
+  }
+
+  &__carousel {
+    position: relative;
+
+    .swiper-wrapper {
+      padding-top: var(--space-lg);
+      padding-bottom: var(--space-lg);
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+
+    .swiper-slide {
+      flex-basis: calc(50% - var(--space-lg));
+      height: auto;
+      @include breakpoint('md') {
+        flex-basis: calc(25% - var(--space-lg));
+      }
+    }
+  }
+
+  &__logo {
+    &--standard {
+      max-width: calc(var(--space-xxxxl) * 1.5);
+    }
+
+    &--small {
+      max-width: var(--space-xxxxl);
+    }
+  }
+
+  &__inner {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+a#view-all {
+  align-items: center;
+  i {margin-right: var(--space-sm);}
+}

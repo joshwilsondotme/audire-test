@@ -1,0 +1,385 @@
+:root {
+  // font family
+  --font-primary: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  --font-headline:  -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+
+  // body font size
+  --text-base-size: 1em;
+  
+  // type scale
+  --text-scale-ratio: 1.2;
+  // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
+  --text-unit: .95em; // if Em units → --text-unit: 1em;
+
+  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-ms: calc(var(--text-sm) * var(--text-scale-ratio)); // Custom Medium-small scalar
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+
+  // line-height
+  --body-line-height: 1.6;
+  --heading-line-height: 1.2;
+
+  // capital letters - used in combo with the lhCrop mixin
+  --font-primary-capital-letter: .9;
+  --font-headline-capital-letter: .9;
+}
+
+@supports(--css: variables) {
+  :root {
+    @include breakpoint(xs) {
+      --text-base-size: 1em;
+      --text-scale-ratio: 1.15;
+    }
+    
+    @include breakpoint(sm) {
+      --text-base-size: 1em;
+      --text-scale-ratio: 1.2;
+    }
+
+    @include breakpoint(md) {
+      --text-base-size: 1em;
+      --text-scale-ratio: 1.25;
+      --body-line-height: 1.7777;
+    }
+
+    @include breakpoint(lg) {
+      --text-base-size: 1.125em;
+      --text-scale-ratio: 1.3;
+    }
+
+    @include breakpoint(xl) {
+      --text-base-size: 1.125em;
+      --text-scale-ratio: 1.3;
+    }
+  }
+}
+
+
+body {
+  font-size: var(--text-base-size);
+  line-height: var(--body-line-height);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-contrast-high);
+  @include fontSmooth();
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  font-weight: 500;
+  color: var(--color-contrast-high);
+  line-height: var(--heading-line-height);
+}
+
+// text size
+.text-xxxl, .has-xxxlarge-font-size {
+  font-size: var(--text-xxxl); // ~66px
+}
+
+h1, .text-xxl, .has-xxlarge-font-size {
+  font-size: var(--text-xxl); // ~51px
+}
+
+h2, .text-xl, .has-xlarge-font-size {
+  font-size: var(--text-xl); // ~39px
+}
+
+h3, .text-lg, .has-large-font-size {
+  font-size: var(--text-lg); // ~30px
+}
+
+h4, .text-md, .has-medium-font-size {
+  font-size: var(--text-md); // ~23px
+}
+
+.text-ms, .has-medium-small-font-size {
+  font-size: var(--text-ms); // ~17px?
+}
+
+small, sup, .text-sm, .has-small-font-size {
+  font-size: var(--text-sm); // ~13px
+}
+
+.text-xs, .has-xsmall-font-size {
+  font-size: var(--text-xs); // ~10px
+}
+
+.text-base-size {
+  font-size: var(--text-base-size); // 18px
+}
+
+.text-inherit {
+  font-size: inherit;
+}
+
+.text-body {
+  font-family: var(--font-primary);
+}
+
+.text-headline {
+  font-family: var(--font-headline);
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+// inline text
+a, .link {
+  color: var(--color-primary-700);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+u, .text-underline {
+  text-decoration: underline;
+}
+
+.weight-400 { font-weight: 400; }
+.weight-500 { font-weight: 500; }
+.weight-600 { font-weight: 600; }
+.weight-700 { font-weight: 700; }
+
+
+.text-component {
+  --component-body-line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
+  --component-heading-line-height: calc(var(--heading-line-height) * var(--line-height-multiplier, 1));
+
+  h1, h2, h3, h4 {
+    line-height: var(--component-heading-line-height, 1.2);
+    margin-bottom: calc(var(--space-xs) * var(--text-vspace-multiplier, 1));
+  }
+
+
+  p, blockquote, ul li, ol li {
+    line-height: var(--component-body-line-height);
+  }
+
+  p.btn {
+    line-height: 1;
+  }
+  
+  ul, ol, p, blockquote, .text-component__block {
+    margin-bottom: calc(var(--space-md) * var(--text-vspace-multiplier, 1));
+  }
+
+  ul, ol {
+    padding-left: 1em;
+    li {
+      margin-bottom: var(--space-xs);
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  img {
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: var(--space-xs);
+  }
+  
+  em {
+    font-style: italic;
+  }
+
+  hr {
+    margin-top: calc(var(--space-lg) * var(--text-vspace-multiplier, 1));
+    margin-bottom: calc(var(--space-lg) * var(--text-vspace-multiplier, 1));
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-contrast-low);
+    height: 1px;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+//light theme text color treatment
+[data-text-theme="light"] {
+  color: var(--color-white);
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  .btn {
+    text-decoration: none;
+  }
+  .headline {
+    color: var(--color-white);
+    &::before {
+      background-color: var(--color-white);
+    }
+  }
+}
+
+
+//dark theme text color treatment
+[data-text-theme="dark"] {
+  color: var(--color-contrast-hight);
+  .headline {
+    color: var(--color-black);
+  }
+}
+
+a:not(.btn):not(.site-menu__link):not(.social-list__link):not(.hover-card) {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Editor Styles
+.is-style-alt { font-family: var(--font-primary); }
+.is-style-uppercase { text-transform: uppercase; }
+
+/* 
+documentation - 
+https://codyhouse.co/ds/docs/framework/typography#text-component
+
+example for these classes - 
+https://codyhouse.co/ds/components/app/article-example 
+
+don't think we need these, but not deleting just yet 
+*/
+// // text block container
+// .text-component__block--full-width {
+//   width: 100vw;
+//   margin-left: calc(50% - 50vw);
+// }
+
+// @include breakpoint(sm) {
+//   .text-component__block--left, 
+//   .text-component__block--right {
+//     width: 45%;
+
+//     img {
+//       width: 100%;
+//     }
+//   }
+
+//   .text-component__block--left {
+//     float: left;
+//     margin-right: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+//   }
+
+//   .text-component__block--right {
+//     float: right;
+//     margin-left: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+//   }
+// }
+
+// outset content
+@include breakpoint(xl) {
+  .text-component__block--outset {
+    width: calc(100% + 2 * var(--space-xxl));
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-component__block--outset:not(.text-component__block--right) {
+    margin-left: calc(-1 * var(--space-xxl));
+  }
+
+  .text-component__block--left, .text-component__block--right {
+    width: 50%;
+  }
+
+  .text-component__block--right.text-component__block--outset {
+    margin-right: calc(-1 * var(--space-xxl));
+  }
+}
+
+.notice {
+  &::before {
+    content: '\f059';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: inherit;
+    margin-right: var(--space-sm);
+  }
+}
+
+// border quotes
+[class*="border-quote"] {
+  padding: 0 var(--space-sm);
+  
+  color: var(--color-contrast-400);
+  font-style: italic;
+  
+  border-left-width: 4px;
+  border-left-style: solid;
+  
+  cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: var(--space-sm);
+  }
+}
+
+.border-quote {
+  &__primary {
+    border-color: var(--color-primary);
+    
+    cite { color: var(--color-primary); }
+  }
+  
+  &__secondary {
+    border-color: var(--color-secondary);
+    
+    cite { color: var(--color-secondary); }
+  }
+  
+  &__tertiary {
+    border-color: var(--color-tertiary);
+    
+    cite { color: var(--color-tertiary); }
+  }
+  
+  &__quaternary {
+    border-color: var(--color-quaternary);
+    
+    cite { color: var(--color-quaternary); }
+  }
+}
+
+// misc elements
+.section-title {
+  @extend .color-secondary-500;
+  @extend .text-uppercase;
+  @extend .letter-spacing-1;
+  @extend .text-weight-500;
+}

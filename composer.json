@@ -1,0 +1,11 @@
+{
+  "repositories": [
+      {
+          "type": "composer",
+          "url": "http://wpackagist.org"
+      }
+  ],
+  "require": {
+    "mexitek/phpcolors": "dev-master"
+  }
+}

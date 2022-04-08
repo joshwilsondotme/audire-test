@@ -1,0 +1,2183 @@
+{
+    "key": "group_60fec7dbb6cde",
+    "title": "Clone Options",
+    "fields": [
+        {
+            "key": "field_60fec81506221",
+            "label": "Section Design Options",
+            "name": "section_design_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61ddfea075ed3",
+                    "label": "Layout Options",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 1,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_61ddff2e75ed4",
+                    "label": "Layout Style",
+                    "name": "layout_style",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "full": "Full Width",
+                        "contained": "Contained",
+                        "split": "Split Content"
+                    },
+                    "allow_null": 0,
+                    "default_value": "full",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_61df59032cf91",
+                    "label": "Contained Content Width",
+                    "name": "contained_content_width",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_61ddff2e75ed4",
+                                "operator": "==",
+                                "value": "contained"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "xxxxs": "xxxxs",
+                        "xxxs": "xxxs",
+                        "xxs": "xxs",
+                        "xs": "xs",
+                        "sm": "sm",
+                        "md": "md",
+                        "lg": "lg",
+                        "xl": "xl",
+                        "xxl": "xxl",
+                        "xxxl": "xxxl",
+                        "xxxxl": "xxxxl"
+                    },
+                    "allow_null": 0,
+                    "default_value": "lg",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_61ddff9575ed5",
+                    "label": "Split Content Image Alignment",
+                    "name": "split_content_image_alignment",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_61ddff2e75ed4",
+                                "operator": "==",
+                                "value": "split"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "Left",
+                        "right": "Right"
+                    },
+                    "allow_null": 0,
+                    "default_value": "left",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_61e57af3d97d3",
+                    "label": "Layout ID",
+                    "name": "layout_id",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": null,
+                    "wrapper": {
+                        "width": "",
+                        "class": "61e99a648314a",
+                        "id": "61e99a648314b"
+                    },
+                    "default_value": "61e99a6483142",
+                    "placeholder": "61e99a6483143",
+                    "prepend": "61e99a6483144",
+                    "append": "61e99a6483145",
+                    "maxlength": "",
+                    "readonly": true
+                },
+                {
+                    "key": "field_60fed3b806230",
+                    "label": "Section Options",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_61b0c47bdddfe",
+                    "label": "Section Height",
+                    "name": "section_height",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_61b0c547dddff",
+                            "label": "Enable Custom Height",
+                            "name": "custom_height",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_61b0c574dde00",
+                            "label": "Height",
+                            "name": "height_px",
+                            "type": "text",
+                            "instructions": "Make sure to include the proper units.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61b0c547dddff",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "600px",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_61df59422cf92",
+                    "label": "Section Overlap",
+                    "name": "section_overlap",
+                    "type": "button_group",
+                    "instructions": "Applies a negative top margin to this section, causing it to overlap the preceding section.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "0": "None",
+                        "xxxxs": "xxxxs",
+                        "xxxs": "xxxs",
+                        "xxs": "xxs",
+                        "xs": "xs",
+                        "sm": "sm",
+                        "md": "md",
+                        "lg": "lg",
+                        "xl": "xl",
+                        "xxl": "xxl",
+                        "xxxl": "xxxl",
+                        "xxxxl": "xxxxl"
+                    },
+                    "allow_null": 0,
+                    "default_value": 0,
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_60fed3ce06231",
+                    "label": "Padding",
+                    "name": "padding",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60fed3d906232",
+                            "label": "Top",
+                            "name": "top",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": "xxl",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_60fed44606233",
+                            "label": "Bottom",
+                            "name": "bottom",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": "xxl",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6107f70415dbd",
+                    "label": "Grid Gap",
+                    "name": "grid_gap",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "None",
+                        "xxxxs": "xxxxs",
+                        "xxxs": "xxxs",
+                        "xxs": "xxs",
+                        "xs": "xs",
+                        "sm": "sm",
+                        "md": "md",
+                        "lg": "lg",
+                        "xl": "xl",
+                        "xxl": "xxl",
+                        "xxxl": "xxxl",
+                        "xxxxl": "xxxxl"
+                    },
+                    "allow_null": 0,
+                    "default_value": "lg",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_60fecc6606222",
+                    "label": "Background Color",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_60fecc7406223",
+                    "label": "",
+                    "name": "background_color",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60fed17a06225",
+                            "label": "Colors",
+                            "name": "color_options",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary-100": "Primary 100",
+                                "primary-200": "Primary 200",
+                                "primary-300": "Primary 300",
+                                "primary-400": "Primary 400",
+                                "primary-500": "Primary",
+                                "primary-600": "Primary 600",
+                                "primary-700": "Primary 700",
+                                "primary-800": "Primary 800",
+                                "primary-900": "Primary 900",
+                                "secondary-100": "Secondary 100",
+                                "secondary-200": "Secondary 200",
+                                "secondary-300": "Secondary 300",
+                                "secondary-400": "Secondary 400",
+                                "secondary-500": "Secondary",
+                                "secondary-600": "Secondary 600",
+                                "secondary-700": "Secondary 700",
+                                "secondary-800": "Secondary 800",
+                                "secondary-900": "Secondary 900",
+                                "tertiary-100": "Tertiary 100",
+                                "tertiary-200": "Tertiary 200",
+                                "tertiary-300": "Tertiary 300",
+                                "tertiary-400": "Tertiary 400",
+                                "tertiary-500": "Tertiary",
+                                "tertiary-600": "Tertiary 600",
+                                "tertiary-700": "Tertiary 700",
+                                "tertiary-800": "Tertiary 800",
+                                "tertiary-900": "Tertiary 900",
+                                "quaternary-100": "Quaternary 100",
+                                "quaternary-200": "Quaternary 200",
+                                "quaternary-300": "Quaternary 300",
+                                "quaternary-400": "Quaternary 400",
+                                "quaternary-500": "quaternary",
+                                "quaternary-600": "Quaternary 600",
+                                "quaternary-700": "Quaternary 700",
+                                "quaternary-800": "Quaternary 800",
+                                "quaternary-900": "Quaternary 900",
+                                "neutral-100": "Neutral 100",
+                                "neutral-200": "Neutral 200",
+                                "neutral-300": "Neutral 300",
+                                "neutral-400": "Neutral 400",
+                                "neutral-500": "Neutral",
+                                "neutral-600": "Neutral 600",
+                                "neutral-700": "Neutral 700",
+                                "neutral-800": "Neutral 800",
+                                "neutral-900": "Neutral 900",
+                                "contrast-100": "Contrast 100",
+                                "contrast-200": "Contrast 200",
+                                "contrast-300": "Contrast 300",
+                                "contrast-400": "Contrast 400",
+                                "contrast-500": "Contrast 500",
+                                "contrast-600": "Contrast 600"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "contrast-100",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_60fed19606227",
+                            "label": "Custom Color",
+                            "name": "custom_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60fed8b95688c",
+                    "label": "Background Image",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_60fed1a606228",
+                    "label": "",
+                    "name": "background_image",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60fed1e406229",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_60fed1fa0622a",
+                            "label": "X Position",
+                            "name": "x_position",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "top": "Top",
+                                "left": "Left",
+                                "right": "Right",
+                                "center": "Center",
+                                "split-left": "Split Content (Left)",
+                                "split-right": "Split Content (Right)"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_60fed22c0622b",
+                            "label": "Y Position",
+                            "name": "y_position",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "top": "Top",
+                                "left": "Left",
+                                "right": "Right",
+                                "center": "Center"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_60fed2df0622d",
+                            "label": "Overlay",
+                            "name": "overlay_selector",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60fed2cb0622c",
+                            "label": "",
+                            "name": "overlay",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_60fed2df0622d",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61af88ecf9dd7",
+                                    "label": "Overlay Style",
+                                    "name": "overlay_style",
+                                    "type": "button_group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "solid": "Solid",
+                                        "gradient": "Gradient"
+                                    },
+                                    "allow_null": 0,
+                                    "default_value": "solid",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_60fed2f40622e",
+                                    "label": "Color",
+                                    "name": "color_options",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_60fed3050622f",
+                                    "label": "Opacity",
+                                    "name": "opacity",
+                                    "type": "range",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_61af8939f9dd8",
+                                    "label": "Secondary Color",
+                                    "name": "color_options_2",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_61af88ecf9dd7",
+                                                "operator": "==",
+                                                "value": "gradient"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary-100": "Primary 100",
+                                        "primary-200": "Primary 200",
+                                        "primary-300": "Primary 300",
+                                        "primary-400": "Primary 400",
+                                        "primary-500": "Primary",
+                                        "primary-600": "Primary 600",
+                                        "primary-700": "Primary 700",
+                                        "primary-800": "Primary 800",
+                                        "primary-900": "Primary 900",
+                                        "secondary-100": "Secondary 100",
+                                        "secondary-200": "Secondary 200",
+                                        "secondary-300": "Secondary 300",
+                                        "secondary-400": "Secondary 400",
+                                        "secondary-500": "Secondary",
+                                        "secondary-600": "Secondary 600",
+                                        "secondary-700": "Secondary 700",
+                                        "secondary-800": "Secondary 800",
+                                        "secondary-900": "Secondary 900",
+                                        "tertiary-100": "Tertiary 100",
+                                        "tertiary-200": "Tertiary 200",
+                                        "tertiary-300": "Tertiary 300",
+                                        "tertiary-400": "Tertiary 400",
+                                        "tertiary-500": "Tertiary",
+                                        "tertiary-600": "Tertiary 600",
+                                        "tertiary-700": "Tertiary 700",
+                                        "tertiary-800": "Tertiary 800",
+                                        "tertiary-900": "Tertiary 900",
+                                        "quaternary-100": "Quaternary 100",
+                                        "quaternary-200": "Quaternary 200",
+                                        "quaternary-300": "Quaternary 300",
+                                        "quaternary-400": "Quaternary 400",
+                                        "quaternary-500": "quaternary",
+                                        "quaternary-600": "Quaternary 600",
+                                        "quaternary-700": "Quaternary 700",
+                                        "quaternary-800": "Quaternary 800",
+                                        "quaternary-900": "Quaternary 900",
+                                        "neutral-100": "Neutral 100",
+                                        "neutral-200": "Neutral 200",
+                                        "neutral-300": "Neutral 300",
+                                        "neutral-400": "Neutral 400",
+                                        "neutral-500": "Neutral",
+                                        "neutral-600": "Neutral 600",
+                                        "neutral-700": "Neutral 700",
+                                        "neutral-800": "Neutral 800",
+                                        "neutral-900": "Neutral 900",
+                                        "contrast-100": "Contrast 100",
+                                        "contrast-200": "Contrast 200",
+                                        "contrast-300": "Contrast 300",
+                                        "contrast-400": "Contrast 400",
+                                        "contrast-500": "Contrast 500",
+                                        "contrast-600": "Contrast 600"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_61af895af9dd9",
+                                    "label": "Secondary Opacity",
+                                    "name": "opacity_2",
+                                    "type": "range",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_61af88ecf9dd7",
+                                                "operator": "==",
+                                                "value": "gradient"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_61af8974f9dda",
+                                    "label": "Angle",
+                                    "name": "angle",
+                                    "type": "number",
+                                    "instructions": "Defines the direction of the gradient overlay.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_61af88ecf9dd7",
+                                                "operator": "==",
+                                                "value": "gradient"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 90,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": 0,
+                                    "max": 360,
+                                    "step": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_61af8818f9dd3",
+                            "label": "Filters",
+                            "name": "filter_selector",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_61af8827f9dd4",
+                            "label": "",
+                            "name": "filter",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61af8818f9dd3",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61af883df9dd5",
+                                    "label": "Blur",
+                                    "name": "blur",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_61af8879f9dd6",
+                                    "label": "Grayscale",
+                                    "name": "grayscale",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_60fedb50a4659",
+            "label": "Content Container Design Options",
+            "name": "content_container_design_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61b0cf4eb983b",
+                    "label": "Content Wrapper Alignment",
+                    "name": "content_alignment",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61b0cf4eb983c",
+                            "label": "Horizontal",
+                            "name": "horizontal",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right",
+                                "full": "Full Width"
+                            },
+                            "allow_null": 0,
+                            "default_value": "full",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_61b0cf4eb983d",
+                            "label": "Vertical",
+                            "name": "vertical",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "top": "Top",
+                                "middle": "Middle",
+                                "bottom": "Bottom",
+                                "full": "Full Height"
+                            },
+                            "allow_null": 0,
+                            "default_value": "full",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60fed45d06234",
+                    "label": "Content Container Width",
+                    "name": "content_container_width",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "xxxxs": "xxxxs",
+                        "xxxs": "xxxs",
+                        "xxs": "xxs",
+                        "xs": "xs",
+                        "sm": "sm",
+                        "md": "md",
+                        "lg": "lg",
+                        "xl": "xl",
+                        "xxl": "xxl",
+                        "xxxl": "xxxl",
+                        "xxxxl": "xxxxl",
+                        "full": "Full"
+                    },
+                    "allow_null": 0,
+                    "default_value": "lg",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_6205290fdd149",
+                    "label": "Vertically Center Column Content",
+                    "name": "content_column_valign",
+                    "type": "true_false",
+                    "instructions": "Attempt to vertically center all columns within the container. May have unintended side effects with certain layouts.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_6220d9711349a",
+                    "label": "Horizontally Center Column Content",
+                    "name": "content_column_halign",
+                    "type": "true_false",
+                    "instructions": "Attempt to horizontally center all columns within the container. May have unintended side effects with certain layouts.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_61b0cb52b9834",
+                    "label": "Padding",
+                    "name": "padding",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61b0cb52b9835",
+                            "label": "Top",
+                            "name": "top",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_61b0cb52b9836",
+                            "label": "Bottom",
+                            "name": "bottom",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60fed66c06235",
+                    "label": "Margin",
+                    "name": "margin",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60fed71c06236",
+                            "label": "Top",
+                            "name": "top",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_60fed72806237",
+                            "label": "Bottom",
+                            "name": "bottom",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60fedb62a465a",
+                    "label": "Background Color",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_61b0ced1b9837",
+                    "label": "",
+                    "name": "background_color",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61b0ced1b9838",
+                            "label": "Colors",
+                            "name": "color_options",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary-100": "Primary 100",
+                                "primary-200": "Primary 200",
+                                "primary-300": "Primary 300",
+                                "primary-400": "Primary 400",
+                                "primary-500": "Primary",
+                                "primary-600": "Primary 600",
+                                "primary-700": "Primary 700",
+                                "primary-800": "Primary 800",
+                                "primary-900": "Primary 900",
+                                "secondary-100": "Secondary 100",
+                                "secondary-200": "Secondary 200",
+                                "secondary-300": "Secondary 300",
+                                "secondary-400": "Secondary 400",
+                                "secondary-500": "Secondary",
+                                "secondary-600": "Secondary 600",
+                                "secondary-700": "Secondary 700",
+                                "secondary-800": "Secondary 800",
+                                "secondary-900": "Secondary 900",
+                                "tertiary-100": "Tertiary 100",
+                                "tertiary-200": "Tertiary 200",
+                                "tertiary-300": "Tertiary 300",
+                                "tertiary-400": "Tertiary 400",
+                                "tertiary-500": "Tertiary",
+                                "tertiary-600": "Tertiary 600",
+                                "tertiary-700": "Tertiary 700",
+                                "tertiary-800": "Tertiary 800",
+                                "tertiary-900": "Tertiary 900",
+                                "quaternary-100": "Quaternary 100",
+                                "quaternary-200": "Quaternary 200",
+                                "quaternary-300": "Quaternary 300",
+                                "quaternary-400": "Quaternary 400",
+                                "quaternary-500": "quaternary",
+                                "quaternary-600": "Quaternary 600",
+                                "quaternary-700": "Quaternary 700",
+                                "quaternary-800": "Quaternary 800",
+                                "quaternary-900": "Quaternary 900",
+                                "neutral-100": "Neutral 100",
+                                "neutral-200": "Neutral 200",
+                                "neutral-300": "Neutral 300",
+                                "neutral-400": "Neutral 400",
+                                "neutral-500": "Neutral",
+                                "neutral-600": "Neutral 600",
+                                "neutral-700": "Neutral 700",
+                                "neutral-800": "Neutral 800",
+                                "neutral-900": "Neutral 900",
+                                "contrast-100": "Contrast 100",
+                                "contrast-200": "Contrast 200",
+                                "contrast-300": "Contrast 300",
+                                "contrast-400": "Contrast 400",
+                                "contrast-500": "Contrast 500",
+                                "contrast-600": "Contrast 600"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "contrast-100",
+                            "layout": "vertical",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_61b0ced1b9839",
+                            "label": "Custom Color",
+                            "name": "custom_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_61b0cf04b983a",
+                            "label": "Opacity",
+                            "name": "opacity",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_611e6813b65cd",
+            "label": "Column Design Options",
+            "name": "column_design_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61e99b3e7569e",
+                    "label": "Column Sizing",
+                    "name": "column_size",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_61e99b7a756a3",
+                            "label": "Column Span",
+                            "name": "span",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 12,
+                            "min": 1,
+                            "max": 12,
+                            "step": 1,
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_61e99b98756a8",
+                            "label": "Column Offset",
+                            "name": "offset",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "min": 0,
+                            "max": 11,
+                            "step": 1,
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_611e751d53a9a",
+                    "label": "Content Alignment",
+                    "name": "content_alignment",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_611e752853a9b",
+                            "label": "Horizontal",
+                            "name": "horizontal",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_611e755a53a9c",
+                            "label": "Vertical",
+                            "name": "vertical",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "top": "Top",
+                                "middle": "Middle",
+                                "bottom": "Bottom"
+                            },
+                            "allow_null": 0,
+                            "default_value": "top",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_611e6ad4b65d4",
+                    "label": "Padding",
+                    "name": "padding",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_611e6b90b65d5",
+                            "label": "Horizontal",
+                            "name": "horizontal",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_611e6bd1b65d6",
+                            "label": "Vertical",
+                            "name": "vertical",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "None",
+                                "xxxxs": "xxxxs",
+                                "xxxs": "xxxs",
+                                "xxs": "xxs",
+                                "xs": "xs",
+                                "sm": "sm",
+                                "md": "md",
+                                "lg": "lg",
+                                "xl": "xl",
+                                "xxl": "xxl",
+                                "xxxl": "xxxl",
+                                "xxxxl": "xxxxl"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_611e6bf6b65d7",
+                    "label": "Boxed Content",
+                    "name": "boxed_content",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_611e6c84b65d8",
+                    "label": "",
+                    "name": "content_bg_settings",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_611e6bf6b65d7",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_611e6c93b65d9",
+                            "label": "Color",
+                            "name": "color_options",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary-100": "Primary 100",
+                                "primary-200": "Primary 200",
+                                "primary-300": "Primary 300",
+                                "primary-400": "Primary 400",
+                                "primary-500": "Primary",
+                                "primary-600": "Primary 600",
+                                "primary-700": "Primary 700",
+                                "primary-800": "Primary 800",
+                                "primary-900": "Primary 900",
+                                "secondary-100": "Secondary 100",
+                                "secondary-200": "Secondary 200",
+                                "secondary-300": "Secondary 300",
+                                "secondary-400": "Secondary 400",
+                                "secondary-500": "Secondary",
+                                "secondary-600": "Secondary 600",
+                                "secondary-700": "Secondary 700",
+                                "secondary-800": "Secondary 800",
+                                "secondary-900": "Secondary 900",
+                                "tertiary-100": "Tertiary 100",
+                                "tertiary-200": "Tertiary 200",
+                                "tertiary-300": "Tertiary 300",
+                                "tertiary-400": "Tertiary 400",
+                                "tertiary-500": "Tertiary",
+                                "tertiary-600": "Tertiary 600",
+                                "tertiary-700": "Tertiary 700",
+                                "tertiary-800": "Tertiary 800",
+                                "tertiary-900": "Tertiary 900",
+                                "quaternary-100": "Quaternary 100",
+                                "quaternary-200": "Quaternary 200",
+                                "quaternary-300": "Quaternary 300",
+                                "quaternary-400": "Quaternary 400",
+                                "quaternary-500": "quaternary",
+                                "quaternary-600": "Quaternary 600",
+                                "quaternary-700": "Quaternary 700",
+                                "quaternary-800": "Quaternary 800",
+                                "quaternary-900": "Quaternary 900",
+                                "neutral-100": "Neutral 100",
+                                "neutral-200": "Neutral 200",
+                                "neutral-300": "Neutral 300",
+                                "neutral-400": "Neutral 400",
+                                "neutral-500": "Neutral",
+                                "neutral-600": "Neutral 600",
+                                "neutral-700": "Neutral 700",
+                                "neutral-800": "Neutral 800",
+                                "neutral-900": "Neutral 900",
+                                "contrast-100": "Contrast 100",
+                                "contrast-200": "Contrast 200",
+                                "contrast-300": "Contrast 300",
+                                "contrast-400": "Contrast 400",
+                                "contrast-500": "Contrast 500",
+                                "contrast-600": "Contrast 600"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_611e6cbcb65da",
+                            "label": "Opacity",
+                            "name": "opacity",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_611e7165e911e",
+                            "label": "Border Radius",
+                            "name": "border_radius",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "0",
+                                "sm": "Sm",
+                                "md": "Md",
+                                "lg": "Lg",
+                                "50": "Rounded",
+                                "full": "Pill"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_611e726fe911f",
+                            "label": "Box Shadow",
+                            "name": "box_shadow",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_616590ea6bb37",
+            "label": "Image Design Options",
+            "name": "image_design_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6165944b6bb3c",
+                    "label": "Image Settings",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_6165911f6bb38",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_616592706bb39",
+                    "label": "Image Design Options",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_6165947c6bb3d",
+                    "label": "Box Shadow",
+                    "name": "box_shadow",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "None",
+                        "xs": "XS",
+                        "sm": "Small",
+                        "md": "Medium",
+                        "lg": "Large",
+                        "xl": "XL",
+                        "hover": "Hover"
+                    },
+                    "allow_null": 0,
+                    "default_value": "none",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_6165952e6bb3e",
+                    "label": "Border Radius",
+                    "name": "border_radius",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "0": "0",
+                        "sm": "Sm",
+                        "md": "Md",
+                        "lg": "Lg",
+                        "50": "Rounded",
+                        "full": "Pill"
+                    },
+                    "allow_null": 0,
+                    "default_value": 0,
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_6165b81e24db8",
+                    "label": "Image Overlay",
+                    "name": "overlay_selector",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_616596956bb3f",
+                    "label": "",
+                    "name": "image_overlay",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6165b81e24db8",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61659c126bb40",
+                            "label": "Colors",
+                            "name": "color_options",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary-100": "Primary 100",
+                                "primary-200": "Primary 200",
+                                "primary-300": "Primary 300",
+                                "primary-400": "Primary 400",
+                                "primary-500": "Primary",
+                                "primary-600": "Primary 600",
+                                "primary-700": "Primary 700",
+                                "primary-800": "Primary 800",
+                                "primary-900": "Primary 900",
+                                "secondary-100": "Secondary 100",
+                                "secondary-200": "Secondary 200",
+                                "secondary-300": "Secondary 300",
+                                "secondary-400": "Secondary 400",
+                                "secondary-500": "Secondary",
+                                "secondary-600": "Secondary 600",
+                                "secondary-700": "Secondary 700",
+                                "secondary-800": "Secondary 800",
+                                "secondary-900": "Secondary 900",
+                                "tertiary-100": "Tertiary 100",
+                                "tertiary-200": "Tertiary 200",
+                                "tertiary-300": "Tertiary 300",
+                                "tertiary-400": "Tertiary 400",
+                                "tertiary-500": "Tertiary",
+                                "tertiary-600": "Tertiary 600",
+                                "tertiary-700": "Tertiary 700",
+                                "tertiary-800": "Tertiary 800",
+                                "tertiary-900": "Tertiary 900",
+                                "quaternary-100": "Quaternary 100",
+                                "quaternary-200": "Quaternary 200",
+                                "quaternary-300": "Quaternary 300",
+                                "quaternary-400": "Quaternary 400",
+                                "quaternary-500": "quaternary",
+                                "quaternary-600": "Quaternary 600",
+                                "quaternary-700": "Quaternary 700",
+                                "quaternary-800": "Quaternary 800",
+                                "quaternary-900": "Quaternary 900",
+                                "neutral-100": "Neutral 100",
+                                "neutral-200": "Neutral 200",
+                                "neutral-300": "Neutral 300",
+                                "neutral-400": "Neutral 400",
+                                "neutral-500": "Neutral",
+                                "neutral-600": "Neutral 600",
+                                "neutral-700": "Neutral 700",
+                                "neutral-800": "Neutral 800",
+                                "neutral-900": "Neutral 900",
+                                "contrast-100": "Contrast 100",
+                                "contrast-200": "Contrast 200",
+                                "contrast-300": "Contrast 300",
+                                "contrast-400": "Contrast 400",
+                                "contrast-500": "Contrast 500",
+                                "contrast-600": "Contrast 600"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "contrast-100",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_61659c746bb41",
+                            "label": "Opacity",
+                            "name": "opacity",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 100,
+                            "min": 0,
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_618ac5873a3a4",
+                            "label": "Filters",
+                            "name": "filters",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_618ac5a93a3a5",
+                                    "label": "Blur",
+                                    "name": "blur",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_618ac5b13a3a6",
+                                    "label": "Grayscale",
+                                    "name": "grayscale",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1646320387
+}

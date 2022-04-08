@@ -1,0 +1,30 @@
+.page--frequently-asked-questions {
+  display: block;
+  position: relative;
+
+  #toc {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-neutral-100);
+    margin-bottom: var(--space-md);
+  }
+
+  @include breakpoint('md') {
+    display: flex;
+    position: relative;
+    gap: var(--space-lg);
+
+    .toc-container {
+      flex: 1 0 35%;
+      position: relative;
+    }
+
+    #toc {
+      height: auto;
+    }
+
+    .table-content__item{
+      &:not(:first-child) { margin-top: var(--space-sm); }
+      line-height: 1.4;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/colors';
+@import 'base/breakpoints';
+@import 'base/spacing';
+@import 'base/typography';
+@import 'base/lists';
+@import 'base/icons';
+@import 'base/media';
+@import 'base/buttons';
+@import 'base/util';
+@import 'base/transitions';
+
+.mce-content-body {
+  margin: 10px;
+  .color-white {
+    background: #eee;
+  }
+
+  @extend .text-component;
+
+  //on the front end, these are converted to svg.
+  //for wysiwyg we'll rely on the psuedo element
+  .icon-list li::before {
+    display: inline-block;
+    transform: translateX(-100%);
+  }
+}
+
+.acf-field[data-name="colors"] .acf-button-group label.selected {
+  background: transparent !important;
+}
+
+.icon-list { margin-left: 1em; }
+ul.icon-list--soundwave {
+  margin-left: 1.75em;
+}
+ul.icon-list--soundwave li, ol.icon-list--soundwave li {
+  padding-left: .5em;
+}
